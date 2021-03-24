@@ -1,0 +1,58 @@
+.screen {
+  display: grid;
+  grid-template-rows: 8fr 84fr 8fr;
+  grid-template-columns: 35fr 30fr 35fr;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 2;
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 1em;
+  background-color: rgb(53, 53, 53);
+}
+
+.button {
+  display: grid;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  place-items: center;
+  width: 3.2em;
+  height: 3.2em;
+  border: 1px solid black;
+  border-radius: 15%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.buttonsContainer {
+  /* flex direction por padrao e row */
+  display: flex;
+  justify-content: center; /* vai alinhar pelo flex direction, nesse caso pelo row */
+  flex-wrap: wrap;
+  background-image: linear-gradient(to bottom right, blue, purple);
+  border-radius: 1%;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.disabled {
+  background-color: gray;
+}
